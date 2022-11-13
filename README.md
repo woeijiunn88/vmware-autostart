@@ -1,5 +1,7 @@
 ## Introduction
 
+**This fork is modified to user level auto start to solve graphics problem.**
+
 This program is used to start VMware Workstation 16 Virtual Machines at boot time and suspend them automatically before system shutdown or restart.
 
 ## How to Install
@@ -57,6 +59,15 @@ To automatically start VMware Workstation Pro 16 virtual machines on boot with t
 }
 ```
 
+To prevent the VMware Workstation creating errors and warnings dialog when closing the application if opened, enable the "Keep VMs running after Workstation closes under `Edit - Preferences - Workspace` settings.
+![image](https://user-images.githubusercontent.com/20749427/201509998-88355109-a2e9-4f9a-be9b-84cc3c95b630.png)
+
+Start the virtual machine.
+```
+systemctl --user start vmware-autostart.service
+```
+<s>
 ## Known Issues
 
 If you keep a virtual machine opened in the VMware Workstation Pro 16 app, the VMware Autostart program won’t be able to suspend the virtual machine when you shutdown or reboot your computer while keeping the VMware Workstation Pro 16 app opened. It might be rare for people to shutdown or reboot their computer while keeping programs open. But the program could be improved to make sure that the VMware Workstation Pro 16 app is closed before suspending virtual machines.
+</s>
