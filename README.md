@@ -19,7 +19,7 @@ Navigate to the `/opt` directory and clone this GitHub repository as follows:
 
 ```bash
 cd /opt
-git clone https://github.com/shovon8/vmware-autostart.git
+git clone https://github.com/woeijiunn88/vmware-autostart.git
 cd /opt/vmware-autostart
 ```
 
