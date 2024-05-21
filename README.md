@@ -47,13 +47,13 @@ sudo ln -s /opt/vmware-autostart/vmware-autostart.service /etc/systemd/system/vm
 For the systemd changes to take effect, reload systemd daemons.
 
 ```bash
-sudo systemctl daemon-reload
+systemctl --user daemon-reload
 ```
 
 Add the `vmware-autostart.service` to the system startup.
 
 ```bash
-sudo systemctl enable vmware-autostart.service
+systemctl --user enable vmware-autostart.service
 ```
 
 ## Configuring Virtual Machines
