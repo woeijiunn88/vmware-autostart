@@ -2,7 +2,11 @@
 
 ## Introduction
 
-**This fork is modified to user level auto start to solve graphics problem.**
+~~This fork is modified to user level auto start to solve graphics problem.~~
+Not working I guess, run in autostart settings instead (for example: KDE)
+```bash
+/opt/vmware-autostart/bin/autostart start
+```
 
 This program is used to start VMware Workstation 16 Virtual Machines at boot time and suspend them automatically before system shutdown or restart.
 
